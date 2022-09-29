@@ -1,0 +1,721 @@
+
+
+@font-face {
+    font-family: MrsEaves;
+    src: url(assets/MrsEavesSmallCaps.otf);
+  }
+
+h1 {
+    margin: 0%;
+    font-size: 20px;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+* {
+    font-family: MrsEaves;
+}
+
+
+/*HEADER SECTION*/
+
+
+
+header {
+    height: 23vh;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+}
+
+.side > h1 {
+    margin: auto;
+    margin-top: 35%;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.mask-cont {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.venetianMask {
+    height: 100%;
+}
+
+.col-cont {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*END OF HEADER SECTION*/
+
+
+
+main {
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#989590, #B8B5B0);
+}
+
+.roof {
+    height: 21%;
+    width: 100%;
+    clip-path: polygon(14.6% 0%, 85.4% 0%, 66.5% 100%, 33.5% 100%);
+    background: radial-gradient(#EBE7E7, #E9E0E0);
+}
+
+.middle-section {   
+    height: 10%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: baseline;
+}
+
+.left-wall-cont-solid {
+    height: 100%;
+    width: 33.33%;
+    position: relative;
+}
+
+.left-wall-cont {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: clip-path 3s;
+}
+
+.left-wall {
+    height: 540%;
+    width: 300%;
+    bottom: -231%;
+    z-index: 10;
+    position: absolute;
+    clip-path: polygon(0% 0%, 14.58% 0%, 33.33% 38.4%, 33.33% 57%, 0% 100%);/*polygon(0% 0%, 43.75% 0%, 100% 38.4%, 100% 57%, 0% 100%)*/
+    background: linear-gradient(#F6F2F2, #ECDCDC);
+    transform-style: preserve-3d;
+    display: flex;
+}
+
+.image-left-1 {
+    height: 22.94%;
+    width: 11.624%;
+    top:  43.12%;
+    left: 3.47%;
+    position: relative;
+}
+
+.img-cont-l-f-active {
+    animation: firstLeftImageContActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.img-cont-l-f-rev {
+    animation: firstLeftImageContRev;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.l1-image-active {
+    animation: firstLeftImageActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.l1-image-rev { 
+    animation: firstLeftImageRev; 
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.-i1 {
+    clip-path: polygon(0% 0%, 100% 7.179%, 100% 64.106%, 0% 100%);/*/71.285*/
+}
+
+@keyframes firstLeftImageContActive {
+    0% {    height: 22.94%;
+            width: 11.624%;
+            top:  43.12%;
+            left: 3.47%; 
+        }
+    100% {  height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            left: 11.996%; 
+        }
+}
+
+@keyframes firstLeftImageContRev {
+    0% {    height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            left: 11.996%; 
+        }
+    100% {  height: 22.94%;
+            width: 11.624%;
+            top:  43.12%;
+            left: 3.47%;
+        }
+}
+
+@keyframes firstLeftImageActive {
+    0% { clip-path: polygon(0% 0%, 100% 7.179%, 100% 64.106%, 0% 100%); }
+    100% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+}
+
+@keyframes firstLeftImageRev {
+    0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+    100% { clip-path: polygon(0% 0%, 100% 7.179%, 100% 64.106%, 0% 100%); }
+}
+
+
+
+.image-left-2 {
+    height: 12.72%;
+    width: 6.13%;
+    top:  44.78%;
+    left: 7.2%;
+    position: relative;
+}
+
+.img-cont-l-s-active {
+    animation: secondLeftImageContActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.img-cont-l-s-rev {
+    animation: secondLeftImageContRev;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.l2-image-active {
+    animation: secondLeftImageActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.l2-image-rev { 
+    animation: secondLeftImageRev; 
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.-i2 {
+    clip-path: polygon(0% 0%, 100% 4.34%, 100% 73.959%, 0% 100%);
+}
+
+@keyframes secondLeftImageContActive {
+    0% {    height: 12.72%;
+            width: 6.13%;
+            top:  44.78%;
+            left: 7.2%;
+        }
+    100% {  height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            /* left: 42.388%;  */
+            left: 29%;
+        }
+}
+
+@keyframes secondLeftImageContRev {
+    0% {    height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            /* left: 42.388%;   */
+            left: 29%;
+        }
+    100% {  height: 12.72%;
+            width: 6.13%;
+            top:  44.78%;
+            left: 7.2%;
+        }
+}
+
+@keyframes secondLeftImageActive {
+    0% { clip-path: polygon(0% 0%, 100% 7.179%, 100% 64.106%, 0% 100%); }
+    100% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+}
+
+@keyframes secondLeftImageRev {
+    0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+    100% { clip-path: polygon(0% 0%, 100% 7.179%, 100% 64.106%, 0% 100%); }
+}
+
+
+
+
+
+.image-left-3 {
+    height: 7.8%;
+    width: 3.84%;
+    top:  45.6%;
+    left: 9.87%;
+    position: relative;
+}
+
+.img-cont-l-t-active {
+    animation: thirdLeftImageContActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.img-cont-l-t-rev {
+    animation: thirdLeftImageContRev;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.l3-image-active {
+    animation: thirdLeftImageActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.l3-image-rev { 
+    animation: thirdLeftImageRev; 
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.-i3 {
+    clip-path: polygon(0% 0%, 100% 5.319%, 100% 75.177%, 0% 100%);
+}
+
+@keyframes thirdLeftImageContActive {
+    0% {    height: 7.8%;
+            width: 3.84%;
+            top:  45.6%;
+            left: 9.87%;
+        }
+    100% {  height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            /* left: 42.388%;  */
+            left: 45%;
+        }
+}
+
+@keyframes thirdLeftImageContRev {
+    0% {    height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            /* left: 42.388%;   */
+            left: 45%;
+        }
+    100% {  height: 7.8%;
+            width: 3.84%;
+            top:  45.6%;
+            left: 9.87%;
+        }
+}
+
+@keyframes thirdLeftImageActive {
+    0% { clip-path: polygon(0% 0%, 100% 7.179%, 100% 64.106%, 0% 100%); }
+    100% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+}
+
+@keyframes thirdLeftImageRev {
+    0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+    100% { clip-path: polygon(0% 0%, 100% 7.179%, 100% 64.106%, 0% 100%); }
+}
+
+
+
+.leftWall-enter-active { 
+    animation: leftWall;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+@keyframes leftWall {
+    0% { clip-path: polygon(0% 0%, 14.58% 0%, 33.33% 38.4%, 33.33% 57%, 0% 100%); }
+    100% { clip-path: polygon(0% 0%, 30% 0%, 100% 0%, 100% 100%, 0% 100%); }
+
+}
+
+.leftWall-leave-active { 
+    animation: leftWallRev; 
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+@keyframes leftWallRev {
+    0% { clip-path: polygon(0% 0%, 30% 0%, 100% 0%, 100% 100%, 0% 100%); }
+    100% { clip-path: polygon(0% 0%, 14.58% 0%, 33.33% 38.4%, 33.33% 57%, 0% 100%); }
+}
+
+.backWall-cont {
+    height: 100%;
+    width: 33.33%;
+    position: relative;
+}
+
+.backWall {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(#E2CEFF, #B99CF5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backDoor-cont {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-end;
+    /* background-color: blue; */
+}
+
+.doorLink {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.backDoor {
+    position: relative;
+    width: 100%;
+    height: 45%;
+    top: 55%;
+    right: 130%;
+    background-color: red;
+}
+
+.right-wall-cont-solid {
+    height: 100%;
+    width: 33.33%;
+    position: relative;
+}
+
+.right-wall-cont {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: clip-path 3s;
+}
+
+.right-wall {
+    height: 540%;
+    width: 300%;
+    left: -200%;
+    bottom: -231%;
+    position: absolute;
+    /* background-color: purple; */
+    /* 0% 0%, 14.58% 0%, 33.33% 38.4%, 33.33% 57%, 0% 100% */
+    clip-path: polygon(66.66% 38.4%, 85.42% 0%, 100% 0%, 100% 100%, 66.66% 57%);
+    background: linear-gradient(#EFE8E8, #EEEDE6);
+    display: flex;
+}
+
+.image-right-1 {
+    height: 7.8%;
+    width: 3.84%;
+    top:  45.6%;
+    left: 68%;
+    position: relative;
+}
+
+.img-cont-r-f-active {
+    animation: firstRightImageContActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.img-cont-r-f-rev {
+    animation: firstRightImageContRev;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.r1-image-active {
+    animation: firstRightImageActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.r1-image-rev { 
+    animation: firstRightImageRev; 
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.-i4 {
+    clip-path: polygon(0% 5.319%, 100% 0%, 100% 100%, 0% 75.177%);
+}
+
+@keyframes firstRightImageContActive {
+    0% {    height: 7.8%;
+            width: 3.84%;
+            top:  45.6%;
+            left: 68%;
+        }
+    100% {  height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            left: 10%;
+        }
+}
+
+@keyframes firstRightImageContRev {
+    0% {    height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            left: 10%;
+        }
+    100% {  height: 7.8%;
+            width: 3.84%;
+            top:  45.6%;
+            left: 68%;
+        }
+}
+
+@keyframes firstRightImageActive {
+    0% { clip-path: polygon(0% 5.319%, 100% 0%, 100% 100%, 0% 75.177%); }
+    100% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+}
+
+@keyframes firstRightImageRev {
+    0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+    100% { clip-path: polygon(0% 5.319%, 100% 0%, 100% 100%, 0% 75.177%); }
+}
+
+
+
+
+.image-right-2 {
+    height: 12.72%;
+    width: 6.13%;
+    top:  44.78%;
+    left: 70.3%;
+    position: relative;
+}
+
+.img-cont-r-s-active {
+    animation: secondRightImageContActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.img-cont-r-s-rev {
+    animation: secondRightImageContRev;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.r2-image-active {
+    animation: secondRightImageActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.r2-image-rev { 
+    animation: secondRightImageRev; 
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.-i5 {
+    clip-path: polygon(0% 4.34%, 100% 0%, 100% 100%, 0% 73.959%);
+}
+
+@keyframes secondRightImageContActive {
+    0% {    height: 12.72%;
+            width: 6.13%;
+            top:  44.78%;
+            left: 70.3%;
+        }
+    100% {  height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            left: 29%;
+        }
+}
+
+@keyframes secondRightImageContRev {
+    0% {    height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            left: 29%;
+        }
+    100% {  height: 12.72%;
+            width: 6.13%;
+            top:  44.78%;
+            left: 70.3%;
+        }
+}
+
+@keyframes secondRightImageActive {
+    0% { clip-path: polygon(0% 5.319%, 100% 0%, 100% 100%, 0% 75.177%); }
+    100% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+}
+
+@keyframes secondRightImageRev {
+    0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+    100% { clip-path: polygon(0% 5.319%, 100% 0%, 100% 100%, 0% 75.177%); }
+}
+
+
+
+
+
+
+.image-right-3 {
+    height: 22.94%;
+    width: 11.624%;
+    top:  43.12%;
+    left: 73.5%;
+    position: relative;
+}
+
+.img-cont-r-t-active {
+    animation: thirdRightImageContActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.img-cont-r-t-rev {
+    animation: thirdRightImageContRev;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.r3-image-active {
+    animation: thirdRightImageActive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+
+.r3-image-rev { 
+    animation: thirdRightImageRev; 
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.-i6 {
+    clip-path: polygon(0% 7.179%, 100% 0%, 100% 100%, 0% 64.106%);/*/71.285*/
+}
+
+@keyframes thirdRightImageContActive {
+    0% {    height: 22.94%;
+            width: 11.624%;
+            top:  43.12%;
+            left: 73.5%;
+        }
+    100% {  height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            left: 48%;
+        }
+}
+
+@keyframes thirdRightImageContRev {
+    0% {    height: 22.94%;
+            width: 10.433%;
+            top:  38.42%;
+            left: 48%;
+        }
+    100% {  height: 22.94%;
+            width: 11.624%;
+            top:  43.12%;
+            left: 73.5%;
+        }
+}
+
+@keyframes thirdRightImageActive {
+    0% { clip-path: polygon(0% 5.319%, 100% 0%, 100% 100%, 0% 75.177%); }
+    100% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+}
+
+@keyframes thirdRightImageRev {
+    0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+    100% { clip-path: polygon(0% 5.319%, 100% 0%, 100% 100%, 0% 75.177%); }
+}
+
+
+
+
+
+
+
+.img-cont {
+    height: 100%;
+    width: auto;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+.rightWall-enter-active { 
+    animation: rightWall;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rightWall {
+    0% { clip-path: polygon(66.66% 38.4%, 85.42% 0%, 100% 0%, 100% 100%, 66.66% 57%); }
+    100% { clip-path: polygon(0% 0%, 30% 0%, 100% 0%, 100% 100%, 0% 100%); }
+}
+
+.rightWall-leave-active { 
+    animation: rightWallRev; 
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+@keyframes rightWallRev {
+    0% { clip-path: polygon(0% 0%, 30% 0%, 100% 0%, 100% 100%, 0% 100%); }
+    100% { clip-path: polygon(66.66% 38.4%, 85.42% 0%, 100% 0%, 100% 100%, 66.66% 57%); }
+}
+
+.rw-2 {
+    z-index: 11;
+}
+
+.floor {
+    height: 57%;
+    width: 100%;
+    background: linear-gradient(#989590, #B8B5B0);
+}
+
+.bg-behind {
+    background: radial-gradient(#fff, #FCFCC3);
+}
+
+.bg-behind > h3 {
+    margin: 0%;
+    padding: 10%;
+    padding-top: 20%;
+    text-align: center;
+}
